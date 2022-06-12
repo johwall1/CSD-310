@@ -1,2 +1,2 @@
-# CSD-310
+# csd-310
 Data/Database Security Class
