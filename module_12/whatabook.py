@@ -102,7 +102,7 @@ def show_books_to_add(cursor, userid):
 def add_book_to_wishlist(cursor, userid, bookid):
     cursor.execute(("INSERT INTO wishlist(user_id, book_id) VALUES (") + str(userid) +(", ") + str(bookid) + (");"))
     db.commit()
-
+    print(("\nBook: ") + str(bookid) + (" added to Wishlist \n"))
 try:
     # Verify the connection to the user
     db = mysql.connector.connect(**config) 
